@@ -1,0 +1,105 @@
+@-webkit-keyframes rock {
+  0% {-webkit-transform: rotate(10deg);}
+  10% {-webkit-transform: rotate(-10deg);}
+  20% {-webkit-transform: rotate(8deg);}
+  30% {-webkit-transform: rotate(-8deg);}
+  40% {-webkit-transform: rotate(6deg);}
+  50% {-webkit-transform: rotate(-6deg);}
+  60% {-webkit-transform: rotate(4deg);}
+  70% {-webkit-transform: rotate(-4deg);}
+  80% {-webkit-transform: rotate(2deg);}
+  90% {-webkit-transform: rotate(-2deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+
+@-moz-keyframes rock {
+  0% {-moz-transform: rotate(10deg);}
+  10% {-moz-transform: rotate(-10deg);}
+  20% {-moz-transform: rotate(8deg);}
+  30% {-moz-transform: rotate(-8deg);}
+  40% {-moz-transform: rotate(6deg);}
+  50% {-moz-transform: rotate(-6deg);}
+  60% {-moz-transform: rotate(4deg);}
+  70% {-moz-transform: rotate(-4deg);}
+  80% {-moz-transform: rotate(2deg);}
+  90% {-moz-transform: rotate(-2deg);}
+  100% {-moz-transform: rotate(0deg);}
+}
+
+@keyframes rock {
+  0% {transform: rotate(10deg);}
+  10% {transform: rotate(-10deg);}
+  20% {transform: rotate(8deg);}
+  30% {transform: rotate(-8deg);}
+  40% {transform: rotate(6deg);}
+  50% {transform: rotate(-6deg);}
+  60% {transform: rotate(4deg);}
+  70% {transform: rotate(-4deg);}
+  80% {transform: rotate(2deg);}
+  90% {transform: rotate(-2deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.text {
+  height: 370px;
+  width: 400px;
+  line-height: 20px;
+  font-size: 14px;
+  position: absolute;
+  left: 180px;
+  top: 140px;
+}
+
+.text_in {
+}
+
+.text .caption {
+  width: 400px;
+  height: 240px;
+  background: url(../img/caption.png) no-repeat;
+  margin-left: 40px;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: rock 2s infinite;
+  -moz-animation: rock 2s infinite;
+  animation: rock 2s infinite;
+}
+
+.text .to {
+  width: 400px;
+  margin-top: 10px;
+  margin-right: 40px;
+  opacity: 0;
+  -webkit-transition: all 1s 1s;
+  -moz-transition: all 1s 1s;
+  transition: all 1s 1s;
+}
+
+.text .msg {
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 40px;
+  opacity: 0;
+  -webkit-transition: all 1s 2s;
+  -moz-transition: all 1s 2s;
+  transition: all 1s 2s;
+}
+
+.text .from {
+  width: 400px;
+  margin-top: 10px;
+  margin-right: 40px;
+  text-align: right;
+  opacity: 0;
+  -webkit-transition: all 1s 3s;
+  -moz-transition: all 1s 3s;
+  transition: all 1s 3s;
+}
+
+.text_in .caption, .text_in .msg, .text_in .from, .text_in .to {
+  margin-left: 0px;
+  opacity: 1;
+}

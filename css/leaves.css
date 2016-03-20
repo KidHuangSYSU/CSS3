@@ -1,0 +1,82 @@
+.left {
+  width: 114px;
+  height: 266px;
+  background: url(../img/leaf_left.png);
+  position: absolute;
+  left: 10px;
+  top: -50px;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.left_in {
+  opacity: 1;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.left_out {
+  opacity: 0;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+.right {
+  width: 318px;
+  height: 338px;
+  background: url(../img/leaf_right.png);
+  position: absolute;
+  left: 156px;
+  top: -65px;
+  z-index: 111;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.right_in {
+  opacity: 1;
+  -webkit-transform: rotate(5deg) scale(0.8);
+  -moz-transform: rotate(5deg) scale(0.8);
+  transform: rotate(5deg) scale(0.8);
+}
+
+.right_out {
+  opacity: 0;
+  -webkit-transform: rotate(15deg) scale(0.8);
+  -moz-transform: rotate(15deg) scale(0.8);
+  transform: rotate(15deg) scale(0.8);
+}
+
+.bottom {
+  width: 618px;
+  height: 468px;
+  background: url(../img/leaf_expand.png);
+  position: absolute;
+  left: -150px;
+  top: -45px;
+  z-index: 99;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+
+.bottom_in {
+  opacity: 1;
+}
